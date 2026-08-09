@@ -1,0 +1,15 @@
+{
+  "version": "0.6.0",
+  "published_at": "2026-08-09T14:27:00+00:00",
+  "notes": "Responsive compact-window UI, persistent compass and scale labels, verified in-app macOS updater, stability fixes, and broader release QA.",
+  "downloads": {
+    "macos": {
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.6.0/AURIS-macOS-0.6.0.dmg",
+      "sha256": "b13367bf62834957ed5dac1bebc3acd1009c3a0ebe4797a5bb5578803c6be295",
+      "size_bytes": 324843703
+    },
+    "windows": {
+      "url": "https://github.com/matv99/AURIS-Releases/releases/tag/v0.6.0"
+    }
+  }
+}
