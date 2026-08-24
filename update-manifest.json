@@ -1,15 +1,12 @@
 {
-  "version": "0.6.0",
-  "published_at": "2026-08-09T14:27:00+00:00",
-  "notes": "Responsive compact-window UI, persistent compass and scale labels, verified in-app macOS updater, stability fixes, and broader release QA.",
+  "version": "7.0.0",
+  "published_at": "2026-08-24T14:41:44+00:00",
+  "notes": "ISO 9613-2:2024 calculation corrections, exact viewport-metre contour grids, truthful point progress and ETA, object-aware contour presentation, deterministic receptor renumbering, production 3D fixes, and transactional macOS updates.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.6.0/AURIS-macOS-0.6.0.dmg",
-      "sha256": "b13367bf62834957ed5dac1bebc3acd1009c3a0ebe4797a5bb5578803c6be295",
-      "size_bytes": 324843703
-    },
-    "windows": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/tag/v0.6.0"
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v7.0.0/AURIS-macOS-7.0.0.dmg",
+      "sha256": "bf9e2cafa54a9b069fd7811729323010caaa60da84ef0d5bb77cd6a622283d0b",
+      "size_bytes": 329659932
     }
   }
 }
