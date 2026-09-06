@@ -1,12 +1,12 @@
 {
-  "version": "0.9.1",
-  "published_at": "2026-09-06T21:58:54+00:00",
-  "notes": "# AURIS 0.9.1\n\nMaintenance update for road calculations, fa\u00e7ade receptors and model editing.\n\n- Explicit Day/Night LAeq prediction from one LA10,18h input, using the revised TRL end correction after combining native CRTN contributions by road type.\n- Faster CRTN contour calculations using batched terrain sampling and parallel receiver batches; improved progress reporting and active-slice L10 validation.\n- Road node editing, snapping and Shift-branch junction creation; junction clipping for carriageway edges, lanes and central reservations.\n- Shift-click places attached incident receptors on the fa\u00e7ade; Shift\u2013Option/Alt-click places them 1 m outward. Host-wall contact does not block front-side sound; rear-side screening is retained.\n- Compact, zoom-independent receptor result badges on Option/Alt-click; Shift-click remains multi-selection.\n- Batch building colours, medium-weight building labels above geometry, and area-centred building handles.\n- Independent terrain-point visibility and selection; reduced editor hover and 3D scene preparation overhead.\n- Deferred 3D inspector commits to avoid destroying active text fields during Return-key handling.\n\n- Corrected 24-hour AADT/AADF flow handling: the previous hourly-equivalent multiplier could turn 21,000 vehicles/day into 428,757 Q18h when the legacy profile held 100%. Daily counts now use an explicit 06:00\u201324:00 percentage. AADF and AADT share the same calculation; AADF shows its 1:1 AADT equivalent. The default 100% is clearly identified as a conservative assumption. Existing daily-count projects require recalculation.\n- Traffic count and AADT/AADF selector share a row; the resulting CRTN Q18h is shown directly below the period share.\n- Frame all now frames the placed acoustic objects. Calculate expands an unlocked, cropped view to include model objects; explicitly locked or defined export frames retain their requested extent.\n\n\n## Existing operating restrictions\n\nThe v0.9.0 REPORT_SAFE-only scope remains: production report-quality calculations, direct 0.5 m Calculated Grid and explicitly calculated receptors at assessment locations. Interpolated Raster, Scalar Field, SmartSmooth, coarse interpolated contours and Live Preview remain outside report-grade acceptance. Full contour stages B\u2013G remain incomplete. This maintenance release does not expand standards certification or report-grade acceptance. Automated macOS accessibility inspection remains an unresolved separate limitation.\n",
+  "version": "0.9.2",
+  "published_at": "2026-09-06T22:29:36+00:00",
+  "notes": "CRTN inspector hotfix: stable spacing, visible AADT/AADF selector, consistent flow input, clear invalid-level errors, and legacy junction edge markings in editor and sheet. Existing REPORT_SAFE restrictions remain.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.9.1/AURIS-macOS-0.9.1.dmg",
-      "sha256": "b1ee3891bb942f89ba0f976baf44b841dcf8135361cd55a054183ef2961a666d",
-      "size_bytes": 284832420
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.9.2/AURIS-macOS-0.9.2.dmg",
+      "sha256": "c1e69e95707dc1deecbe5e08284a410b0257fb571848491aa592be6c1aa5574c",
+      "size_bytes": 284835794
     },
     "windows": {
       "url": ""
