@@ -1,12 +1,12 @@
 {
-  "version": "0.9.3",
-  "published_at": "2026-09-08T06:46:37.282733+00:00",
-  "notes": "CRTN emission with optional ISO propagation; internal dual-carriageway calculation; saved-road flag fix; Day/Night contour and sheet workflow improvements. Existing report-safety restrictions remain.",
+  "version": "0.9.4",
+  "published_at": "2026-09-11T18:03:36+00:00",
+  "notes": "Scenario inclusion, base-owned receptor stacks, consistent building terrain geometry, faster terrain queries, refined 3D lighting and teal barriers, menus and inspector improvements. Recalculate terrain-building models. Existing validation limitations remain disclosed in the release notes.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.9.3/AURIS-macOS-0.9.3.dmg",
-      "sha256": "45bf10790eb0d46ec11b3f2562128367395e18697b49e4ab87fd884f948daf95",
-      "size_bytes": 284384382
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.9.4/AURIS-macOS-0.9.4.dmg",
+      "sha256": "16c9ee88be8963123cc8fbf4ecfe4d224362f4298fece6f5cb719885bdd3281b",
+      "size_bytes": 316119396
     },
     "windows": {
       "url": ""
