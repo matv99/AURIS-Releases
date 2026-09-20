@@ -1,12 +1,12 @@
 {
-  "version": "0.9.7",
-  "published_at": "2026-09-20T07:53:05+00:00",
-  "notes": "## New features\n- The project Save button briefly confirms a successful save.\n- Global Settings has dedicated sidebar navigation with clearer, more compact sections.\n\n## Changes\n- Basemap alignment now uses the shared AURIS method switcher, compact method-specific controls and larger previews. Online map search/source and terrain/import actions each share a single muted toolbar.\n- Full-bleed logos now default to Cover; existing saved image-fit choices are retained.\n- Project descriptions grow with the panel height, wrap without a horizontal scrollbar, and no longer need a resize grip.\n- Project and contour fields use consistent medium-weight text.\n- Level bands form one continuous list, including below-range and above-range colours, with no nested scrollbar or hard table borders.\n- Sheet preview and Editor use the shared AURIS switcher, with aligned switcher heights, crisp zoom controls, explicit 100% scale and labelled map overlays.\n- A quiet Local / OSGB36 indicator in the status bar replaces coordinate labels on the editor canvas; exported neatline styling is unchanged.\n- Reduced regular-grid terrain-profile sampling overhead while retaining the same sampled elevations. Dense building scenes can still take several minutes because exact screening and building-edge support checks remain enabled.\n\n## Bug fixes\n- Consultant choices are restricted to the selected organisation, including its qualifications and sole-consultant default.\n- Changing a contour minimum keeps the colours; changing the band count retains the original colour progression during editing.\n- Improved narrow-panel control spacing and moved save/warning status badges closer to the window edge while keeping update progress centred.\n- Terrain import batches now respect Google\u2019s encoded URL limit as well as its 512-location limit, preserving precise OSGB36 coordinates. HTTP failures show the API reason without exposing the key.\n- Basemap file selection now uses an owned, asynchronous file picker, with reliable cancel/reopen handling.",
+  "version": "0.9.8",
+  "published_at": "2026-09-20T08:12:51+00:00",
+  "notes": "## New features\n- A persistent update window keeps release notes, download progress, verification and the restart action together.\n\n## Changes\n- A cleaner changelog groups new features, changes and bug fixes, showing only sections with content.\n- Check for Updates also shows the current release notes when you are already up to date.\n- The bottom-left activity indicator and message have more space from the window edge.\n- Downloads continue when you close the update window; reopen it to review progress or install when ready.\n\n## Bug fixes\n- The update badge opens the discovered update immediately instead of silently repeating a network check.\n- A manual update request made during a background check now opens the result window.\n- Empty changelog headings and legacy \u201cNone in this release\u201d placeholders are hidden.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.9.7/AURIS-macOS-0.9.7.dmg",
-      "sha256": "1eedc48d49b863905f8ee3cfbe420dc5c2c8ba8c9bb714442d18bec70b085664",
-      "size_bytes": 379309074
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.9.8/AURIS-macOS-0.9.8.dmg",
+      "sha256": "b3ba644149e5c49fae6c13b33704769f035196b570af68bbbbca002bc3558e7d",
+      "size_bytes": 379324176
     },
     "windows": {
       "url": ""
