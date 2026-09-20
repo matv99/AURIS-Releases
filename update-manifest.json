@@ -1,12 +1,12 @@
 {
-  "version": "0.9.8",
-  "published_at": "2026-09-20T08:12:51+00:00",
-  "notes": "## New features\n- A persistent update window keeps release notes, download progress, verification and the restart action together.\n\n## Changes\n- A cleaner changelog groups new features, changes and bug fixes, showing only sections with content.\n- Check for Updates also shows the current release notes when you are already up to date.\n- The bottom-left activity indicator and message have more space from the window edge.\n- Downloads continue when you close the update window; reopen it to review progress or install when ready.\n\n## Bug fixes\n- The update badge opens the discovered update immediately instead of silently repeating a network check.\n- A manual update request made during a background check now opens the result window.\n- Empty changelog headings and legacy \u201cNone in this release\u201d placeholders are hidden.",
+  "version": "0.9.9",
+  "published_at": "2026-09-20T10:02:56+00:00",
+  "notes": "## New features\n- Switch the active basemap directly from the 3D toolbar, beside Save Image.\n- Choose Standard or Slim coordinate-neatline margins in the Sheet tab.\n\n## Changes\n- Lock View, Side Panel and Identify Receptors are available beside the preview zoom controls, with an eased lock animation.\n- Calculate and Update Grid now use the standard AURIS teal.\n- Receptor results show Assigned Building whenever a receptor is assigned to a building, with rows ordered by building, base receptor ID and floor.\n- Single-scenario results include the selected scenario beside the time-slice levels. Building assignments are included in copied and Excel tables.\n- Compact sheet defaults use an 8 pt project title and 6 pt supporting text, medium-weight values, smaller automatic logos and 50% contour swatch rounding. Existing custom sizes are retained.\n- Sheet headings now read Time Slice and Contour Scale, dB.\n- Scale bars use readable metric divisions and consistent units, with steadier live zoom thresholds and a clearer white outline. Settled sheet previews use supersampling for smoother overlays and small text.\n\n## Bug fixes\n- Coordinate-neatline visibility and margin choice are retained when reopening a project.\n- Sheet-preview north arrows and scale bars now scale consistently from the export geometry; exported decoration sizes are unchanged.\n- Copying or exporting a contour sheet no longer prompts for recalculation solely because its viewport extends beyond the calculated grid. Colour, label and presentation edits retain the calculated levels; changes to calculation inputs still prompt for an update.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.9.8/AURIS-macOS-0.9.8.dmg",
-      "sha256": "b3ba644149e5c49fae6c13b33704769f035196b570af68bbbbca002bc3558e7d",
-      "size_bytes": 379324176
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.9.9/AURIS-macOS-0.9.9.dmg",
+      "sha256": "da9e627df949bf8884a590bd09d0efc8c6765faae66ce2b13c429a1650133967",
+      "size_bytes": 379337910
     },
     "windows": {
       "url": ""
