@@ -1,12 +1,12 @@
 {
-  "version": "0.9.9",
-  "published_at": "2026-09-20T10:02:56+00:00",
-  "notes": "## New features\n- Switch the active basemap directly from the 3D toolbar, beside Save Image.\n- Choose Standard or Slim coordinate-neatline margins in the Sheet tab.\n\n## Changes\n- Lock View, Side Panel and Identify Receptors are available beside the preview zoom controls, with an eased lock animation.\n- Calculate and Update Grid now use the standard AURIS teal.\n- Receptor results show Assigned Building whenever a receptor is assigned to a building, with rows ordered by building, base receptor ID and floor.\n- Single-scenario results include the selected scenario beside the time-slice levels. Building assignments are included in copied and Excel tables.\n- Compact sheet defaults use an 8 pt project title and 6 pt supporting text, medium-weight values, smaller automatic logos and 50% contour swatch rounding. Existing custom sizes are retained.\n- Sheet headings now read Time Slice and Contour Scale, dB.\n- Scale bars use readable metric divisions and consistent units, with steadier live zoom thresholds and a clearer white outline. Settled sheet previews use supersampling for smoother overlays and small text.\n\n## Bug fixes\n- Coordinate-neatline visibility and margin choice are retained when reopening a project.\n- Sheet-preview north arrows and scale bars now scale consistently from the export geometry; exported decoration sizes are unchanged.\n- Copying or exporting a contour sheet no longer prompts for recalculation solely because its viewport extends beyond the calculated grid. Colour, label and presentation edits retain the calculated levels; changes to calculation inputs still prompt for an update.",
+  "version": "0.9.10",
+  "published_at": "2026-09-21T08:23:26+00:00",
+  "notes": "## Changes\n\n- Reduced the default AURIS footer logo on contour sheets for a quieter, better-balanced sidebar in previews and exports. Existing default-sized marks update automatically; custom sizes and organisation logos are preserved.\n- Added a coordinate neatline toggle to the sheet toolbar, with clearer hover, selected and keyboard-focus states across the sheet controls.\n- Tidied the activity footer with compact progress and time-slice text beside the activity label, a centred progress track, and cyan update/purple save and calculation indicators.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.9.9/AURIS-macOS-0.9.9.dmg",
-      "sha256": "da9e627df949bf8884a590bd09d0efc8c6765faae66ce2b13c429a1650133967",
-      "size_bytes": 379337910
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.9.10/AURIS-macOS-0.9.10.dmg",
+      "sha256": "8a5932018c6f6abe85f558247c0a2b80991ec8efd9fb59a73fa0148c9995f417",
+      "size_bytes": 379340441
     },
     "windows": {
       "url": ""
