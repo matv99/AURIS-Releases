@@ -1,12 +1,12 @@
 {
-  "version": "0.9.10",
-  "published_at": "2026-09-21T08:23:26+00:00",
-  "notes": "## Changes\n\n- Reduced the default AURIS footer logo on contour sheets for a quieter, better-balanced sidebar in previews and exports. Existing default-sized marks update automatically; custom sizes and organisation logos are preserved.\n- Added a coordinate neatline toggle to the sheet toolbar, with clearer hover, selected and keyboard-focus states across the sheet controls.\n- Tidied the activity footer with compact progress and time-slice text beside the activity label, a centred progress track, and cyan update/purple save and calculation indicators.",
+  "version": "0.9.11",
+  "published_at": "2026-09-22T19:52:47+00:00",
+  "notes": "## New features\n\n- None in this release.\n\n## Changes\n\n- Contour-sheet headings now use consistent typography. The footer sits at the bottom with padding, and new sheets omit its divider by default.\n- Slim is now the default coordinate-neatline margin. Explicitly saved Standard margins remain available and are preserved.\n\n## Bug fixes\n\n- Matched the footer activity dot to its progress-bar colour, balanced the text separators and spacing, and prevented the idle Ready label from being truncated after activity.\n- SmartSmooth now uses the same underlying interpolation as Interpolated Raster before generating contour lines and bands. Simplification and B\u00e9zier smoothing remain separate presentation adjustments.\n- Restored higher-density interpolated raster rendering at 32\u00d7, 64\u00d7, 128\u00d7 and 256\u00d7, including updates after panning and zooming. SmartSmooth respects the selected density and joins tile boundaries reliably.\n- Corrected compressed sidebar text and undersized AURIS footer logos on Retina displays.\n- Changed contour-list item ownership to avoid the wrapper-destruction path implicated in a crash after changing receptor size and opening Contours.\n- Removed graphics effects from native macOS popups to avoid the constructor path implicated in an Editor right-click crash.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.9.10/AURIS-macOS-0.9.10.dmg",
-      "sha256": "8a5932018c6f6abe85f558247c0a2b80991ec8efd9fb59a73fa0148c9995f417",
-      "size_bytes": 379340441
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.9.11/AURIS-macOS-0.9.11.dmg",
+      "sha256": "2b1ab1d82a6739664c80efd62abc3df88e6d045c9d22785571915c7716c5b817",
+      "size_bytes": 379355939
     },
     "windows": {
       "url": ""
