@@ -1,12 +1,12 @@
 {
-  "version": "0.11.1",
-  "published_at": "2026-09-27T13:12:52+00:00",
-  "notes": "## New features\n- No new features in this focused maintenance release.\n\n## Changes\n- The update review releases its modal window before Save / Don't Save / Cancel and Save As. Cancel or a failed save returns to the review; a successful restart dismisses it before closing the application.\n\n## Bug fixes\n- Opening the inspector no longer changes a railway default behind the scenes, falsely marking an untouched project as unsaved or asking to save it when restarting for an update.\n- Actual project, model and settings edits continue to receive unsaved-work protection.\n\nAcoustic calculations and contour reconstruction are unchanged from 0.11.0. This patch uses focused UI/update regression and native lifecycle checks, not a repeated full acoustic suite. The macOS installer is ad-hoc signed and is not Apple-notarized.",
+  "version": "0.11.2",
+  "published_at": "2026-09-27T15:02:07+00:00",
+  "notes": "## New features\n\n- Double-click a building, area source, line source or barrier to edit its nodes. Shift-click selects additional nodes for moving together. Hold Option/Alt over an edge to insert a node on that edge, or over a node to remove it. Delete/Backspace also removes selected nodes. Minimum valid node counts are enforced.\n- Editing handles remain visible and selectable above overlapping objects.\n- Building height is now near the top of the inspector. Building names and one-decimal height labels can be displayed independently.\n- With a point source/receptor selected, or during placement, hold Control/Command to anchor a live distance guide at the cursor.\n\n## Changes\n\n- Receptor placement uses Shift for a 1 m fa\u00e7ade offset and Shift+Option/Alt for placement on the fa\u00e7ade.\n\n## Bug fixes\n\n- Smooth projected-node previews, clearer hover handles and immediate fa\u00e7ade previews when modifier keys change.\n- Reuse receiver workers across reconstruction passes, avoiding repeated process startup and teardown without changing acoustic settings or refinement tolerances.\n\n- Reduced progress-update overhead in projects with large saved calculation histories and embedded logos. Acoustic calculation accuracy and refinement settings are unchanged.\n- Focused editor, persistence, save/update and native interaction checks were used for this hotfix. This is not a new full-suite or ISO conformance claim.\n- Contour reconstruction support can still take longer than expected, including in small scenes. This release does not claim that total Calculate performance is resolved.\n- macOS application is ad-hoc signed, not Apple notarized.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.11.1/AURIS-macOS-0.11.1.dmg",
-      "sha256": "4cbf126dd749cec59c317e19cdb9d570bc02d4fac83b1092964b59cbb12f3505",
-      "size_bytes": 381088582
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.11.2/AURIS-macOS-0.11.2.dmg",
+      "sha256": "c27d336f9278bb0e291d18147e25391b8a0055e6333eca24b363ab89dd939e74",
+      "size_bytes": 381096604
     },
     "windows": {
       "url": ""
