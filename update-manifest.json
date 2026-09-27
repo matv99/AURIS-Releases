@@ -1,12 +1,12 @@
 {
-  "version": "0.11.2",
-  "published_at": "2026-09-27T15:02:07+00:00",
-  "notes": "## New features\n\n- Double-click a building, area source, line source or barrier to edit its nodes. Shift-click selects additional nodes for moving together. Hold Option/Alt over an edge to insert a node on that edge, or over a node to remove it. Delete/Backspace also removes selected nodes. Minimum valid node counts are enforced.\n- Editing handles remain visible and selectable above overlapping objects.\n- Building height is now near the top of the inspector. Building names and one-decimal height labels can be displayed independently.\n- With a point source/receptor selected, or during placement, hold Control/Command to anchor a live distance guide at the cursor.\n\n## Changes\n\n- Receptor placement uses Shift for a 1 m fa\u00e7ade offset and Shift+Option/Alt for placement on the fa\u00e7ade.\n\n## Bug fixes\n\n- Smooth projected-node previews, clearer hover handles and immediate fa\u00e7ade previews when modifier keys change.\n- Reuse receiver workers across reconstruction passes, avoiding repeated process startup and teardown without changing acoustic settings or refinement tolerances.\n\n- Reduced progress-update overhead in projects with large saved calculation histories and embedded logos. Acoustic calculation accuracy and refinement settings are unchanged.\n- Focused editor, persistence, save/update and native interaction checks were used for this hotfix. This is not a new full-suite or ISO conformance claim.\n- Contour reconstruction support can still take longer than expected, including in small scenes. This release does not claim that total Calculate performance is resolved.\n- macOS application is ad-hoc signed, not Apple notarized.",
+  "version": "0.11.3",
+  "published_at": "2026-09-27T15:40:58+00:00",
+  "notes": "## New features\n- None in this release.\n\n## Changes\n- Faster screened-path calculations: avoid searching for lateral paths when an endpoint has no possible connection, and reuse immutable building geometry. A matched 32-receiver P2001 check ran about 1.9 times faster with identical levels. Full-scene Calculate timings have not been verified; dense scenes can still take minutes.\n- Changing contour detail reuses the prepared scalar field and domain. Calculation settings, source resolution, reflection settings and numerical tolerances are unchanged.\n\n## Bug fixes\n- SmartSmooth now honours Raw, 2\u00d7, 4\u00d7, 8\u00d7 and 16\u00d7 detail throughout the calculation and presentation routes instead of forcing some requests to 16\u00d7.\n- Reject reuse of a contour field when its raw values or additional acoustic support have changed.\n- Existing support-limit warnings remain visible: reaching the calculation-point limit does not establish interpolation convergence.\n- macOS application is ad-hoc signed, not Apple notarized. Focused hotfix verification is not a new full-suite or ISO conformance claim.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.11.2/AURIS-macOS-0.11.2.dmg",
-      "sha256": "c27d336f9278bb0e291d18147e25391b8a0055e6333eca24b363ab89dd939e74",
-      "size_bytes": 381096604
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.11.3/AURIS-macOS-0.11.3.dmg",
+      "sha256": "d9bb8a482eb9a29bbb754b2e125913a7cbcb5e7f0231e9bf8483a471671224ea",
+      "size_bytes": 381102320
     },
     "windows": {
       "url": ""
