@@ -1,12 +1,12 @@
 {
-  "version": "0.11.3",
-  "published_at": "2026-09-27T15:40:58+00:00",
-  "notes": "## New features\n- None in this release.\n\n## Changes\n- Faster screened-path calculations: avoid searching for lateral paths when an endpoint has no possible connection, and reuse immutable building geometry. A matched 32-receiver P2001 check ran about 1.9 times faster with identical levels. Full-scene Calculate timings have not been verified; dense scenes can still take minutes.\n- Changing contour detail reuses the prepared scalar field and domain. Calculation settings, source resolution, reflection settings and numerical tolerances are unchanged.\n\n## Bug fixes\n- SmartSmooth now honours Raw, 2\u00d7, 4\u00d7, 8\u00d7 and 16\u00d7 detail throughout the calculation and presentation routes instead of forcing some requests to 16\u00d7.\n- Reject reuse of a contour field when its raw values or additional acoustic support have changed.\n- Existing support-limit warnings remain visible: reaching the calculation-point limit does not establish interpolation convergence.\n- macOS application is ad-hoc signed, not Apple notarized. Focused hotfix verification is not a new full-suite or ISO conformance claim.",
+  "version": "0.11.5",
+  "published_at": "2026-09-29T08:00:17+00:00",
+  "notes": "## New features\n- None in this release.\n\n## Changes\n- Faster dense contour calculations for supported ISO source fields, retaining the same acoustic equations and source integration settings.\n- Raw contour calculations finish after solving the requested grid. Display interpolation and SmartSmooth reuse that result without automatically calculating more acoustic samples.\n- Interpolation now uses an obstacle-conforming triangular field and vector threshold bands, eliminating display-cell stair steps. Gradient samples the same field without image blur.\n- Interpolation displays explicitly distinguish presentation detail from verified acoustic accuracy; coarse grids can remain unresolved near sources and screening transitions.\n\n## Bug fixes\n- Restored switching between Raw, Interpolated, Gradient and SmartSmooth, with shared presentation caches.\n- Corrected contour appearance updates and blending during dragging.\n- Preserved the locked report-map extent when resizing sheet preview, reusing the sheet image during resizing.\n- Improved contour progress, Results cancellation, and calculation/presentation worker cleanup.\n- Corrected an unsupported cylindrical-receiver fallback error.\n- macOS build is ad-hoc signed, not Apple notarized.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.11.3/AURIS-macOS-0.11.3.dmg",
-      "sha256": "d9bb8a482eb9a29bbb754b2e125913a7cbcb5e7f0231e9bf8483a471671224ea",
-      "size_bytes": 381102320
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.11.5/AURIS-macOS-0.11.5.dmg",
+      "sha256": "7388f92149878eb42540610eb6e2bfda4ef1e4bea6ed7209b82c9105562a5c6f",
+      "size_bytes": 382285268
     },
     "windows": {
       "url": ""
