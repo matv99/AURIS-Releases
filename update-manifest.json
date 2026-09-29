@@ -1,12 +1,12 @@
 {
-  "version": "0.12.2",
-  "published_at": "2026-09-29T14:26:18+00:00",
-  "notes": "## Bug fixes\n- Locked contour sheets keep their sheet area when a project is reopened. Previously the locked area was not saved, so a reopened sheet could show and export a much smaller area. Sheets locked in earlier versions are restored from their saved view.\n- The Inputs table appears immediately on large projects; about 1,800 objects now load in a fraction of a second instead of the table staying blank for up to two minutes.\n- Opening a project shows its saved receptor results in the Results tab instead of \"No receptor results yet\".",
+  "version": "0.13.0",
+  "published_at": "2026-09-29T15:01:58+00:00",
+  "notes": "## New features\n- Barrier on berm crest. In a berm's properties, turn on \"Barrier on crest\" and set its height and material, along the full berm or only the selected segments. The barrier stands on the berm crest and is calculated exactly as a barrier drawn along the berm by hand. Barriers drawn over a berm also sit on the berm in calculations and in 3D.\n- Barrier material. Choose a construction for each barrier: standard reflective (the ISO default), concrete, brick/masonry, close-boarded timber, absorptive panel, transparent, or metal. This sets typical octave-band absorption for reflections (ISO 9613-2:2024 Clause 7.5) and the surface density. Values can still be edited, and manufacturer data should replace the typical values where available.\n- Surface density for barriers. Under ISO 9613-2:2024 Clause 7.4.1, a barrier lighter than 10 kg/m\u00b2 is no longer treated as a screen (it can still reflect), and the barrier panel says so.\n- Barriers snap to buildings. With the Barrier tool, hold Shift near a building to snap to its corners and edges, so barriers can abut facades exactly.\n\n## Changes\n- Existing barriers keep their behaviour: they open as \"Standard reflective\" at 25 kg/m\u00b2 unless they already had their own absorption settings.\n- Obstacle screening checks are vectorised, with identical results.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.12.2/AURIS-macOS-0.12.2.dmg",
-      "sha256": "2316725c1ff9905c68a7c80fed1cb3a15e2a8519d3363037347c79f24b74d57f",
-      "size_bytes": 382336425
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.13.0/AURIS-macOS-0.13.0.dmg",
+      "sha256": "1f13454832292df684c3ffc35321145483fa9e91d5625f2b63cd6cc01dd285a6",
+      "size_bytes": 382365953
     },
     "windows": {
       "url": ""
