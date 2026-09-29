@@ -1,12 +1,12 @@
 {
-  "version": "0.12.1",
-  "published_at": "2026-09-29T13:52:31+00:00",
-  "notes": "## Bug fixes\n- SmartSmooth no longer fails with \"Shared threshold topology produced mixed-classification faces\" in densely built areas at the edge of the calculation grid. A region that straddles a threshold, for example along a building's shadow edge, is now divided using the classification of each calculated point.\n- Acoustic barriers are no longer interpolated across. Interpolated Raster, Acoustic Scalar Field and SmartSmooth treat each barrier as a thin wall, like a building, so the source side keeps its levels right up to the barrier and the shadow no longer leaks across it in a stepped edge.",
+  "version": "0.12.2",
+  "published_at": "2026-09-29T14:26:18+00:00",
+  "notes": "## Bug fixes\n- Locked contour sheets keep their sheet area when a project is reopened. Previously the locked area was not saved, so a reopened sheet could show and export a much smaller area. Sheets locked in earlier versions are restored from their saved view.\n- The Inputs table appears immediately on large projects; about 1,800 objects now load in a fraction of a second instead of the table staying blank for up to two minutes.\n- Opening a project shows its saved receptor results in the Results tab instead of \"No receptor results yet\".",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.12.1/AURIS-macOS-0.12.1.dmg",
-      "sha256": "453fd1c8f40672c9ae13c3451fa924971b5057273c9a42f7738256eddd98c453",
-      "size_bytes": 382367655
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.12.2/AURIS-macOS-0.12.2.dmg",
+      "sha256": "2316725c1ff9905c68a7c80fed1cb3a15e2a8519d3363037347c79f24b74d57f",
+      "size_bytes": 382336425
     },
     "windows": {
       "url": ""
