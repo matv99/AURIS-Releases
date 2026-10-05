@@ -1,12 +1,12 @@
 {
-  "version": "0.18.6",
-  "published_at": "2026-10-05T20:11:50+00:00",
-  "notes": "## Changes\n- Each view (the plan and every section) now keeps its own Building names size. A view you haven't set yet starts on Auto.\n\n## Bug fixes\n- On sections, building names ignored the Map labels \u2192 Building names slider and stayed tiny on the sheet. They now use the slider size and scale with the sheet, like on the plan.",
+  "version": "0.18.7",
+  "published_at": "2026-10-05T23:01:32+00:00",
+  "notes": "## Changes\n- Save image\u2026 in the 3D view now saves a report-sized JPEG (up to 1920 px on the long side, typically well under 200 KB) so it doesn't bloat reports. Save full-resolution PNG\u2026 keeps the full Retina frame when you need it. Copied images are report-sized too.\n\n## Bug fixes\n- 3D view image exports and copies were blank: they captured the empty window behind the 3D view instead of the render. They now read the frame from the renderer.\n- Calculate appeared to do nothing when contours were switched off for the sheet: the result was drawn but hidden. Finishing a calculation now switches contours back on.\n- SmartSmooth and the other smooth methods could show rows of dots across the contours. This happened when a Raw grid was switched to a smooth method after the model had changed: the extra points were calculated with the new model and mixed into the old grid. That now asks you to Update the grid instead, and saved runs affected by it display cleanly again.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.18.6/AURIS-macOS-0.18.6.dmg",
-      "sha256": "4c1040bf4ed064ae6a0c211bc4da3e2d9cc449637375955a99065cc124aa2216",
-      "size_bytes": 395952536
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.18.7/AURIS-macOS-0.18.7.dmg",
+      "sha256": "1a6566bb977f0aca81a94560e2c7420de9d5fd06b0feffcd66b3ec6496040af3",
+      "size_bytes": 395938800
     },
     "windows": {
       "url": ""
