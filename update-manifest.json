@@ -1,12 +1,12 @@
 {
-  "version": "0.18.3",
-  "published_at": "2026-10-05T16:10:24+00:00",
-  "notes": "## New features\n- None in this release.\n\n## Changes\n- Holding Shift with the Barrier or Building tool shows the corner or edge snap as soon as Shift is pressed, without moving the mouse first.\n\n## Bug fixes\n- Contours no longer fail with \"Constrained interpolator does not cover continuous face\" at larger grid spacings (seen on a section at 2 m). A thin region where the calculation area meets a shadow line is now checked inside the region rather than on its edge. Every grid spacing from 0.125 m to 16 m was checked on plan and section views.\n- The first point of a barrier (or building) now snaps to a building corner or edge when you hold Shift and click, even if the mouse has not moved since Shift was pressed.\n- Checked that a barrier joining two buildings leaves no gap at its ends: receivers on the rays grazing each junction stay at the screened level behind the barrier.",
+  "version": "0.18.4",
+  "published_at": "2026-10-05T17:23:55+00:00",
+  "notes": "## New features\n- Building names on contour sheets now size themselves to the zoom: small but readable when zoomed out, larger when zoomed in, and never larger than the contour dB labels. A new Map labels \u2192 Building names slider sets a custom size (4\u201340 pt), with an Auto button to return to automatic sizing. The choice is saved per sheet.\n- Redesigned Contour Composer action bar: four equal keys (Update, All views, Export, Copy) in two soft pills, with animated icons and hover, press and disabled states. Update and All views share one split key; starting a run grows the half you clicked into a full-width Cancel key, and a tick briefly confirms when a run finishes.\n\n## Changes\n- Calculate all views can be cancelled from its own key, and cancelling stops the remaining views from being calculated later.\n\n## Bug fixes\n- Building names were drawn at a fixed screen size, so they appeared tiny on contour sheets and exports. They now scale with the sheet.\n- Section contours could fail with \"Polygonised face has no scalar classification\" at fine presentation detail (seen on a section at 16\u00d7), leaving the section without contours. A hairline sliver along the section edge is now handled.\n- Clicking Calculate all views while a calculation was running appeared to do nothing.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.18.3/AURIS-macOS-0.18.3.dmg",
-      "sha256": "9f3041465df8a1cf3acced8df3f7c18aec2a275be0f1969a8f343801773684b8",
-      "size_bytes": 395878952
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.18.4/AURIS-macOS-0.18.4.dmg",
+      "sha256": "57e2bdb6ea771989e77b217a4aee057a6d0e559a35c709264bf52d9601750695",
+      "size_bytes": 395948796
     },
     "windows": {
       "url": ""
