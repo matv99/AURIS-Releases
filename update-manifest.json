@@ -1,12 +1,12 @@
 {
-  "version": "0.18.2",
-  "published_at": "2026-10-05T00:25:19+00:00",
-  "notes": "## New features\n- Calculate all views: a new button beside Calculate works through the plan and every section in one go, then returns to the view you started from. Cancel stops the whole run.\n- Contour label size slider: a smooth 4\u201340 pt range in half points replaces the fixed list. Until you move it, labels use an Auto size based on the sheet area as shown, so they open small but readable and follow the sheet preview when you zoom or resize. Once you set a size it is kept for that contour sheet; Auto returns to the automatic size.\n- Roof-mounted receptors: a receptor over a roof can be set On roof, like rooftop plant. It then keeps its height above the roof when the building, terrain or its position changes, and a receptor stack follows its base.\n\n## Changes\n- Receptor calculations with roads are several times faster on multi-core Macs: CRTN road receivers now run in parallel like the other sources (P1995 with a road, line, area source, barrier and berm: 64 receptors in 8 s instead of 40 s, identical levels).\n- Contour labels sit exactly on their isoline: the numerals are centred on the line rather than the text box, which left them slightly above or below it.\n\n## Bug fixes\n- Contour grids and receptor levels no longer stop with \"ISO Clause 4 distance subdivision reached geometric precision\" next to an area source; numerical slivers left by screening cuts are now skipped.\n- An edited label size above 14 pt or in half points is saved with the project instead of being reset.",
+  "version": "0.18.3",
+  "published_at": "2026-10-05T16:10:24+00:00",
+  "notes": "## New features\n- None in this release.\n\n## Changes\n- Holding Shift with the Barrier or Building tool shows the corner or edge snap as soon as Shift is pressed, without moving the mouse first.\n\n## Bug fixes\n- Contours no longer fail with \"Constrained interpolator does not cover continuous face\" at larger grid spacings (seen on a section at 2 m). A thin region where the calculation area meets a shadow line is now checked inside the region rather than on its edge. Every grid spacing from 0.125 m to 16 m was checked on plan and section views.\n- The first point of a barrier (or building) now snaps to a building corner or edge when you hold Shift and click, even if the mouse has not moved since Shift was pressed.\n- Checked that a barrier joining two buildings leaves no gap at its ends: receivers on the rays grazing each junction stay at the screened level behind the barrier.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.18.2/AURIS-macOS-0.18.2.dmg",
-      "sha256": "6317826ca136eec506512d35543d3628191ee6850f4cdbb49473276b960c1d69",
-      "size_bytes": 395911096
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.18.3/AURIS-macOS-0.18.3.dmg",
+      "sha256": "9f3041465df8a1cf3acced8df3f7c18aec2a275be0f1969a8f343801773684b8",
+      "size_bytes": 395878952
     },
     "windows": {
       "url": ""
