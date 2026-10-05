@@ -1,12 +1,12 @@
 {
-  "version": "0.18.5",
-  "published_at": "2026-10-05T19:46:44+00:00",
-  "notes": "## New features\n- Number fields in Settings now have \u2212 and + buttons; hold one to keep stepping.\n\n## Changes\n- Appearance settings (point symbols, colours, outlines, plan and 3D marker sizes, line and building styles) now update the plan, 3D and composer views as you change them. Done still applies them with the other project changes as one undoable step, and Revert puts the views back.\n- Point sources and receptors now default to 1 m in plan and in 3D (previously 2 m). Existing projects keep their saved sizes.\n\n## Bug fixes\n- Contour dB labels ignored the Label size slider when the sheet used the Raster display, staying at a fixed small size. They now resize live.",
+  "version": "0.18.6",
+  "published_at": "2026-10-05T20:11:50+00:00",
+  "notes": "## Changes\n- Each view (the plan and every section) now keeps its own Building names size. A view you haven't set yet starts on Auto.\n\n## Bug fixes\n- On sections, building names ignored the Map labels \u2192 Building names slider and stayed tiny on the sheet. They now use the slider size and scale with the sheet, like on the plan.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.18.5/AURIS-macOS-0.18.5.dmg",
-      "sha256": "82b0180b849165a51f9f1a2791bcfe72e71e5ca6abc2b7827bc9562bb27511d8",
-      "size_bytes": 395957822
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.18.6/AURIS-macOS-0.18.6.dmg",
+      "sha256": "4c1040bf4ed064ae6a0c211bc4da3e2d9cc449637375955a99065cc124aa2216",
+      "size_bytes": 395952536
     },
     "windows": {
       "url": ""
