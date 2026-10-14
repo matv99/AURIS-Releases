@@ -1,12 +1,12 @@
 {
-  "version": "0.29.1",
-  "published_at": "2026-10-14T15:01:30+00:00",
-  "notes": "## Changes\n- **SmartSmooth Simplify and Smoothing now work in sequence, as two clear steps.** Simplify turns each contour into a cleaner polygon, and each step on the slider looks visibly stronger: Extreme is deliberately faceted, so long road contours become clean straight runs. The amount follows each contour's own size, so tight rings near a source and long bands far from it are simplified to the same look; small rings are no longer flattened while large bands barely change. Smoothing then rounds the corners of that simplified shape with B\u00e9zier curves. At 100% it draws true arcs through the corners, and lower settings soften them less. Before, turning Smoothing on traced the raw contour again and could make lines more detailed instead of smoother.\n- **Pick from screen samples any window or app** with the macOS colour loupe. It no longer needs Screen & System Audio Recording permission or a restart.\n- The status bar's \"Saved / Unsaved changes\" check runs after you edit, instead of every second, which keeps AURIS responsive on large projects.\n\n## Bug fixes\n- **3D view images were saved upside down.** Saved and copied 3D views were mirrored top to bottom (since 0.18.7). They now match the view on screen.\n- **The splash after an update no longer freezes (beachball).** The font list used for plots was rebuilt after every update on the main thread, holding the splash for several seconds. It is now kept between updates, and when it does have to be built, the splash keeps moving.",
+  "version": "0.29.2",
+  "published_at": "2026-10-14T17:57:59+00:00",
+  "notes": "## Changes\n- **Road (CRTN/CRN) contours are now smooth and accurate in Interpolated, Gradient and SmartSmooth.** These projects skipped the extra calculation that adds receivers along shadows and barriers, so the smooth methods could only blend the coarse grid: shadows looked pixellated with a blur, and contours scalloped along barriers. They now get it too, and every barrier is a hard edge in the field. On a test model the result matches exact CRTN calculations within 0.1 dB. Calculation takes longer with a smooth method selected (P1930 at 4 m: about 50 s to 2 minutes); Raw is unchanged.\n- **The update splash is a compact liquid-glass card.** The wave artwork fills the card, a clear glass panel holds the logo, text and progress, and the progress bar keeps gliding even while AURIS is busy starting up.\n- **Drawing-tool defaults are kept between sessions.** Values you set in a tool's defaults before drawing (heights, levels, building properties and so on) now survive restarting AURIS. Factory defaults are unchanged until you change them.\n\n## Bug fixes\n- Small white specks could appear in Gradient view near building corners.\n- The window's rounded corners could show a dark rim, more visible when AURIS was not the active window.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.29.1/AURIS-macOS-0.29.1.dmg",
-      "sha256": "d1e7154ee8a1a05f7e48270ffc8de4dfe966c5bb70d0f886f5b701a351d4f3ff",
-      "size_bytes": 387395364
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.29.2/AURIS-macOS-0.29.2.dmg",
+      "sha256": "97e477098253d6e6a049b7ee0cab8d7d452c935b98b7ac4c80fd36d483eca65a",
+      "size_bytes": 387428837
     },
     "windows": {
       "url": ""
