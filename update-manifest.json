@@ -1,12 +1,12 @@
 {
-  "version": "0.29.2",
-  "published_at": "2026-10-14T17:57:59+00:00",
-  "notes": "## Changes\n- **Road (CRTN/CRN) contours are now smooth and accurate in Interpolated, Gradient and SmartSmooth.** These projects skipped the extra calculation that adds receivers along shadows and barriers, so the smooth methods could only blend the coarse grid: shadows looked pixellated with a blur, and contours scalloped along barriers. They now get it too, and every barrier is a hard edge in the field. On a test model the result matches exact CRTN calculations within 0.1 dB. Calculation takes longer with a smooth method selected (P1930 at 4 m: about 50 s to 2 minutes); Raw is unchanged.\n- **The update splash is a compact liquid-glass card.** The wave artwork fills the card, a clear glass panel holds the logo, text and progress, and the progress bar keeps gliding even while AURIS is busy starting up.\n- **Drawing-tool defaults are kept between sessions.** Values you set in a tool's defaults before drawing (heights, levels, building properties and so on) now survive restarting AURIS. Factory defaults are unchanged until you change them.\n\n## Bug fixes\n- Small white specks could appear in Gradient view near building corners.\n- The window's rounded corners could show a dark rim, more visible when AURIS was not the active window.",
+  "version": "0.29.3",
+  "published_at": "2026-10-14T21:48:29+00:00",
+  "notes": "## Bug fixes\n- AURIS could crash when a list was rebuilt, for example the Source library inside Moving point sources, or when closing a dialog that held one.\n- After the model changed, a Raw result kept being drawn as plain cells whatever contour method or Simplify/Smoothing setting you chose, with no warning. It is now marked out of date, and a lasting message names the method you picked and asks you to press Update Grid.\n- Interpolated at Raw detail now shows the calculated cells, as its description says.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.29.2/AURIS-macOS-0.29.2.dmg",
-      "sha256": "97e477098253d6e6a049b7ee0cab8d7d452c935b98b7ac4c80fd36d483eca65a",
-      "size_bytes": 387428837
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.29.3/AURIS-macOS-0.29.3.dmg",
+      "sha256": "ea05fef6f7155ad82b453a821dcc030ad344a86743913b813358e2c77bf883b0",
+      "size_bytes": 383798385
     },
     "windows": {
       "url": ""
