@@ -1,12 +1,12 @@
 {
-  "version": "0.29.3",
-  "published_at": "2026-10-14T21:48:29+00:00",
-  "notes": "## Bug fixes\n- AURIS could crash when a list was rebuilt, for example the Source library inside Moving point sources, or when closing a dialog that held one.\n- After the model changed, a Raw result kept being drawn as plain cells whatever contour method or Simplify/Smoothing setting you chose, with no warning. It is now marked out of date, and a lasting message names the method you picked and asks you to press Update Grid.\n- Interpolated at Raw detail now shows the calculated cells, as its description says.",
+  "version": "0.29.4",
+  "published_at": "2026-10-15T00:28:59+00:00",
+  "notes": "## Bug fixes\n- After calculating, Interpolated and SmartSmooth could show \"Update Grid for this method\" even though nothing had changed, and pressing Update Grid didn't clear it. This hit projects with terrain or with contour bands different from the defaults. Band colours and limits no longer count as a model change, and terrain is compared consistently. Existing results stay current.\n- SmartSmooth Simplify and Smoothing now visibly work together. Smoothing used to redraw the original contour through the simplified points, so Extreme with 100% Smoothing looked unchanged. It now rounds off the simplified shape's corners. On its own, Smoothing also evens out small jagged steps in the raw trace.\n- Interpolated no longer draws building and barrier shadow edges as staircases. Its bands now follow the field's exact boundaries.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.29.3/AURIS-macOS-0.29.3.dmg",
-      "sha256": "ea05fef6f7155ad82b453a821dcc030ad344a86743913b813358e2c77bf883b0",
-      "size_bytes": 383798385
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.29.4/AURIS-macOS-0.29.4.dmg",
+      "sha256": "e858bc1e752eb17c376fee96a49b936e5e8ccf7ca71c65cd3ebdc0f735fa8a90",
+      "size_bytes": 383808796
     },
     "windows": {
       "url": ""
