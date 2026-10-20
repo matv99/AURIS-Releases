@@ -1,12 +1,12 @@
 {
-  "version": "0.37.0",
-  "published_at": "2026-10-19T20:46:22+00:00",
-  "notes": "## New features\n- **Breakout sources from a building.** In a building's Indoor sound level section, enter the fa\u00e7ade and roof transmission losses and choose Create breakout sources: AURIS adds one pane per fa\u00e7ade, from the ground to the roof, standing 50 mm off the wall and radiating outwards, plus a roof source, all using the building's indoor level (ISO 12354-4 with ISO 9613-2 outdoors). Run it again after changing the building and it replaces the panes it created.\n- **Build up a transmission loss from its elements.** Build up\u2026 takes a wall's elements (wall, windows and doors by area and R, trickle vents and other small elements by count and Dn,e) and gives the composite R', as one value or per band, for a building's breakout or any breakout pane.\n- **Input sensitivity.** Results \u203a More \u203a Input sensitivity\u2026 changes one input at a time on a copy of the scenario (hard or porous ground, meteorological correction, reflections, air conditions, buildings and barriers higher or lower, sources higher) and recalculates. It also ranks every source by what a \u00b13 dB change in its sound power does to each receptor, worked out exactly from its share of the level. The results show as a chart for each receptor, with a CSV export for an appendix.\n\n## Changes\n- **Rotate a multiple selection.** A selection of several objects now has its own rotate grip above its box and turns about the box's centre. Hold Shift to snap to the drawing angle step. Directional sources turn with it, and it is one undo step.\n\n## Bug fixes\n- **Model checks no longer report vertical panes as zero-area.** A pane is measured by its wall area, not its footprint on plan.",
+  "version": "0.38.0",
+  "published_at": "2026-10-20T01:09:46+00:00",
+  "notes": "## Changes\n- **Contour grids calculate several times faster, with the same results.** On a 250-building padel project with sloping ground, a 4 m Raw grid now takes 14 s instead of 89 s, and a 2 m grid 52 s instead of over 4 minutes. Calculated levels match the previous version to within a billionth of a decibel.\n- **Interpolated Raster is ready about six times sooner.** Its contour support refinement takes under a minute instead of seven to eight on the same project, and the interpolated bands draw in half the time, with identical band boundaries.\n- **What made the difference:** lateral paths round buildings (ISO 9613-2 7.4.3) are found with a much better-guided search that still returns the exact shortest route, and building visibility is worked out once instead of for every few receivers. Ground profiles are sampled only where the terrain could reach the ray, and refinement now uses every processor core to the end of each pass.\n\n## Bug fixes\n- **Courts emitting at the contour height no longer leave missing squares around them.** The court's own outline is left blank, and the bands now run up to it and fill the gaps between courts, instead of dropping whole grid cells.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.37.0/AURIS-macOS-0.37.0.dmg",
-      "sha256": "d30a7576fb76b68a76bfdea3115f880fc1c11e45b9c50ce653933777512add0d",
-      "size_bytes": 387847860
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.38.0/AURIS-macOS-0.38.0.dmg",
+      "sha256": "5837b4a324ce72b77541cb72afae19110d6427ce753201021851733e9cbee067",
+      "size_bytes": 391421713
     },
     "windows": {
       "url": ""
