@@ -1,12 +1,12 @@
 {
-  "version": "0.38.0",
-  "published_at": "2026-10-20T01:09:46+00:00",
-  "notes": "## Changes\n- **Contour grids calculate several times faster, with the same results.** On a 250-building padel project with sloping ground, a 4 m Raw grid now takes 14 s instead of 89 s, and a 2 m grid 52 s instead of over 4 minutes. Calculated levels match the previous version to within a billionth of a decibel.\n- **Interpolated Raster is ready about six times sooner.** Its contour support refinement takes under a minute instead of seven to eight on the same project, and the interpolated bands draw in half the time, with identical band boundaries.\n- **What made the difference:** lateral paths round buildings (ISO 9613-2 7.4.3) are found with a much better-guided search that still returns the exact shortest route, and building visibility is worked out once instead of for every few receivers. Ground profiles are sampled only where the terrain could reach the ray, and refinement now uses every processor core to the end of each pass.\n\n## Bug fixes\n- **Courts emitting at the contour height no longer leave missing squares around them.** The court's own outline is left blank, and the bands now run up to it and fill the gaps between courts, instead of dropping whole grid cells.",
+  "version": "0.38.1",
+  "published_at": "2026-10-20T06:37:05+00:00",
+  "notes": "## Changes\n- **Interpolated Raster is ready sooner again.** On a 250-building padel project with sloping ground, contour support refinement now takes about 35 s instead of 57 s in 0.38.0. Calculated levels are unchanged: validation grids are bit-identical, and refined levels agree to within a trillionth of a decibel.\n- **What made the difference:** area sources are subdivided (ISO 9613-2 Clause 4) and lateral path lengths (7.4.3) worked out by compiled code that reproduces the previous arithmetic exactly; unscreened source\u2013receiver pairs skip the barrier search entirely; terrain and building-seam checks run in batches; and the refinement worker pool starts while the grid is still being partitioned.",
   "downloads": {
     "macos": {
-      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.38.0/AURIS-macOS-0.38.0.dmg",
-      "sha256": "5837b4a324ce72b77541cb72afae19110d6427ce753201021851733e9cbee067",
-      "size_bytes": 391421713
+      "url": "https://github.com/matv99/AURIS-Releases/releases/download/v0.38.1/AURIS-macOS-0.38.1.dmg",
+      "sha256": "cb051af34e23a54b2ed481bbe573e65b4f721ce5a3e41b3e0defee92c17a5255",
+      "size_bytes": 397315507
     },
     "windows": {
       "url": ""
